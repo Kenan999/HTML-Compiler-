@@ -1,30 +1,63 @@
-<svg fill="none" viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-@keyframes bounce {
-  0%   { transform: scale(1,    1)   translateY(0)     skew(0deg,  0deg); }
-  3%   { transform: scale(1,    1)   translateY(0)     skew(0deg,  0deg); }
-  5%   { transform: scale(1.1,  .9)  translateY(5px)   skew(0deg,  0deg); }
-  12%  { transform: scale(.9,   1.1) translateY(-70px) skew(25deg, 5deg); }
-  13%  { transform: scale(.9,   1.1) translateY(-70px) skew(25deg, 5deg); }
-  20%  { transform: scale(1.05, .95) translateY(0)     skew(0deg,  0deg); }
-  22%  { transform: scale(1,    1)   translateY(-7px)  skew(0deg,  0deg); }
-  27%  { transform: scale(1,    1)   translateY(0)     skew(0deg,  0deg); }
-  100% { transform: scale(1,    1)   translateY(0)     skew(0deg,  0deg); }
-}
-h1 {
-  width: 120px;
-  line-height: 20px;
-  padding-top: 70px;
-  text-align: center;
-  font: 400 16px/1.5 Helvetica ,Arial ,sans-serif;
-  color: rgb(52, 73, 94);
-  transform-origin: bottom;
-  animation: 4s cubic-bezier(.5, 0, .5, 1.2) 1s infinite bounce;
-}
-      </style>
-      <h1>Hello, world</h1>
-    </div>
-  </foreignObject>
-</svg>
+![image](https://user-images.githubusercontent.com/55302817/208230542-38736925-79ac-4e51-b2cd-fd8aea15956d.png)
+
+
+####HTML code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>Document</title>
+
+    <script>
+        function compoilerHTML(field,e){
+            document.getElementById("output").innerHTML=field.value;
+        }
+    </script>
+
+    <style>
+       textarea, #output{
+        background-color: rgb(21,32,43);
+        width: 80%;
+        height: 150px;
+        color: aliceblue;
+        margin: auto;
+         display: block;
+         margin-top: 20px;
+         border-radius: 15px;
+       } 
+
+    </style>
+
+</head>
+
+
+<body>
+   
+        <div>
+            <h1 class="d-block p-2 bg-primary text-white text-center "   >LIVE HTML COMPILER!</h1>
+        </div>
+       
+        <section>
+            <textarea   type="text"
+            placeholder="    WRITE SOME HTML HERE!!!" 
+            
+            onkeyup="compoilerHTML(this)"></textarea>
+       
+       
+    
+        <div id="output"> </div>
+        </section>
+     
+
+
+  
+
+</body>
+</html>
+```
