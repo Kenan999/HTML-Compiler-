@@ -1,8 +1,6 @@
 ![image](https://user-images.githubusercontent.com/55302817/208230542-38736925-79ac-4e51-b2cd-fd8aea15956d.png)
 
 
-####HTML code
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
